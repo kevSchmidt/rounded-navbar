@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rounded Navbar</title>
+    <!-- link style -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- link font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar-wrapper">
+      <!-- icons -->
+      <div class="navbar">
+        <a href="#" class="navbar-link"><i class="fas fa-home"></i></a>
+        <a href="#" class="navbar-link"><i class="fas fa-city"></i></a>
+        <a href="#" class="navbar-link"><i class="fas fa-school"></i></a>
+        <a href="#" class="navbar-link"><i class="fas fa-landmark"></i></a>
+        <a href="#" class="navbar-link"><i class="fas fa-hotel"></i></a>
+        <a href="#" class="navbar-link"><i class="fas fa-store-alt"></i></a>
+      </div>
+
+      <!-- button -->
+      <div class="navbar-btn">
+        <i class="fa fa-plus"></i>
+      </div>
+    </div>
+  </body>
+  <!-- script -->
+  <script>
+    document.querySelector(".navbar-btn").addEventListener("click", () => {
+      document.querySelector(".navbar-wrapper").classList.toggle("change");
+    });
+  </script>
+</html>
